@@ -23,6 +23,7 @@ In PHP:
 ```php
 use Fyre\Utility\Traits\MacroTrait;
 
+// in any class
 class MyClass {
     use MacroTrait;
 }
@@ -68,7 +69,7 @@ MyClass::macro('myMethod', function(): bool {
     return true;
 });
 
-MyClass::myMethod();
+MyClass::myMethod(); // true
 ```
 
 **Instance Macros**
